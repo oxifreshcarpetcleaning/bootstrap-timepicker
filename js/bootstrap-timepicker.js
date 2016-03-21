@@ -363,17 +363,6 @@
         return;
       }
 
-      this.$element.trigger({
-        'type': 'hide.timepicker',
-        'time': {
-          'value': this.getTime(),
-          'hours': this.hour,
-          'minutes': this.minute,
-          'seconds': this.second,
-          'meridian': this.meridian
-        }
-      });
-
       if (this.template === 'modal' && this.$widget.modal) {
         this.$widget.modal('hide');
       } else {
