@@ -795,6 +795,10 @@
           if (hour === 12){
             meridian = 'PM';
           }
+          
+          if(hour === 0){
+            hour = 12;
+          }
         }
       } else {
         timeMode = ((/a/i).test(time) ? 1 : 0) + ((/p/i).test(time) ? 2 : 0); // 0 = none, 1 = AM, 2 = PM, 3 = BOTH.
